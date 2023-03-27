@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="iconRow">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="cart">Cart</p>
+        </div>
+        <div class="card">
+            <div class="col left">
+                <div class="content">
+                    <div class="imageHolder">
+                        <img
+                            src="data:image/jpeg;base64,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">
+                    </div>
+                    <div class="information">
+                        <div class="desc">
+                            The Complete Sass & SCSS Course: From Beginner to Advanced
+                        </div>
+                        <div class="price">
+                            $9.99
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col right">
+                <div class="content">
+                    <div class="total">
+                        Total $9.99
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="email address">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="full name">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="card number">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="month">
+                        <input type="text" placeholder="MM/YY">
+                        <input type="text" placeholder="CVC">
+                        <input type="checkbox" id="save">
+                        <label for="save">save card?</label>
+                    </div>
+                    <div class="bottomTotal">
+                        your card will be charged with $9.99
+                    </div>
+                    <button class="pay">pay</button>
+                    <div class="bottom">
+                        or pay with
+                    </div>
+                    <div class="paypalContainer">
+                        <div class="paypal">
+                            <i class="fa-brands fa-paypal"></i>
+                            <span>Paypal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

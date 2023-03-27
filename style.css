@@ -1,0 +1,188 @@
+/* Add CSS here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1a193b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.iconRow {
+    width: 10%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #2d2b4e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(138, 181, 212);
+    cursor: pointer;
+}
+
+.card {
+    width: 60%;
+    height: 60%;
+    background-color: #2d2b4e;
+    border-radius: 12px;
+    display: flex;
+}
+
+.col {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.left {
+    width: 30%;
+    background-color: #ededfd;
+}
+
+.right {
+    width: 70%;
+}
+
+.content {
+    width: 80%;
+    height: 80%;
+}
+
+.imageHolder {
+    width: 100%;
+    border-radius: 5px;
+}
+
+img {
+    width: inherit;
+    border-radius: inherit;
+    box-shadow: 0px 10px 10px 10px rgba(221, 182, 227, 0.75);
+}
+
+.information {
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.desc {
+    width: 70%;
+    font-size: 8px;
+    color: rgb(41, 88, 160);
+}
+
+.price {
+    width: 30%;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(41, 88, 160);
+}
+
+.total {
+    color: white;
+}
+
+.input {
+    background-color: #2d2b4e;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(41, 88, 160);
+}
+
+input {
+    background-color: #2d2b4e;
+    border: none;
+    outline: none;
+
+}
+
+i {
+    color: rgb(138, 181, 212);
+}
+
+.month {
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.month input[type="text"] {
+    width: 20%;
+    background-color: #2d2b4e;
+    border-bottom: 2px solid rgb(41, 88, 160);
+    margin-left: 20px;
+}
+
+.month input[type="checkbox"] {
+    margin-left: 30px;
+}
+
+.month label {
+    color: white;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-left: 2px;
+}
+
+.bottomTotal {
+    width: 100%;
+    height: 10%;
+    color: rgb(239, 239, 205);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 25px;
+}
+
+.pay {
+    width: 75%;
+    text-transform: uppercase;
+    height: 30px;
+    background-color: #46b2ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.bottom {
+    color: white;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.paypalContainer {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paypal {
+    background-color: rgb(243, 243, 228);
+    width: fit-content;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
